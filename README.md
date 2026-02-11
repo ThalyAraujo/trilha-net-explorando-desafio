@@ -1,21 +1,63 @@
-# DIO - Trilha .NET - Explorando a linguagem C#
-www.dio.me
+# 🏨 Sistema de Hospedagem — Desafio .NET (DIO)
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de explorando a linguagem C#, da trilha .NET da DIO.
+Projeto desenvolvido como desafio prático da trilha **.NET — Explorando a linguagem C#** da plataforma @DIO.
 
-## Contexto
-Você foi contratado para construir um sistema de hospedagem, que será usado para realizar uma reserva em um hotel. Você precisará usar a classe Pessoa, que representa o hóspede, a classe Suíte, e a classe Reserva, que fará um relacionamento entre ambos.
+O objetivo foi implementar regras de negócio para um sistema simples de hospedagem, aplicando conceitos de orientação a objetos, validações e cálculos condicionais.
 
-O seu programa deverá cálcular corretamente os valores dos métodos da classe Reserva, que precisará trazer a quantidade de hóspedes e o valor da diária, concedendo um desconto de 10% para caso a reserva seja para um período maior que 10 dias.
+---
 
-## Regras e validações
-1. Não deve ser possível realizar uma reserva de uma suíte com capacidade menor do que a quantidade de hóspedes. Exemplo: Se é uma suíte capaz de hospedar 2 pessoas, então ao passar 3 hóspedes deverá retornar uma exception.
-2. O método ObterQuantidadeHospedes da classe Reserva deverá retornar a quantidade total de hóspedes, enquanto que o método CalcularValorDiaria deverá retornar o valor da diária (Dias reservados x valor da diária).
-3. Caso seja feita uma reserva igual ou maior que 10 dias, deverá ser concedido um desconto de 10% no valor da diária.
+## 🎯 Objetivo do Desafio
 
+Construir a lógica de um sistema de reservas de hotel utilizando C#, relacionando as classes:
 
-![Diagrama de classe estacionamento](diagrama_classe_hotel.png)
+- Pessoa (hóspede)
+- Suite
+- Reserva
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+Implementando validações e regras de cálculo conforme os requisitos propostos.
+
+---
+
+## 🧠 Regras Implementadas
+
+✅ Não permite cadastrar hóspedes acima da capacidade da suíte  
+✅ Retorna corretamente a quantidade de hóspedes cadastrados  
+✅ Calcula o valor total da reserva  
+✅ Aplica **10% de desconto** para reservas com 10 dias ou mais  
+✅ Lança exceção quando a capacidade é excedida  
+✅ Organização da lógica de negócio na classe `Reserva`
+
+---
+
+## 💻 Conceitos Praticados
+
+- Programação Orientada a Objetos (POO)
+- Relacionamento entre classes
+- Listas (`List<T>`)
+- Validações de regra de negócio
+- Tratamento de exceções
+- Cálculo com regras condicionais
+- Organização de código
+- Versionamento com Git
+
+---
+
+## 📂 Estrutura do Projeto
+
+```DesafioProjetoHospedagem/
+├── Models/
+│ ├── Pessoa.cs
+│ ├── Suite.cs
+│ └── Reserva.cs
+└── Program.cs
+```
+---
+
+## ▶️ Como Executar
+
+É necessário ter o **.NET SDK** instalado.
+
+No terminal, dentro da pasta do projeto:
+
+```bash
+dotnet run
